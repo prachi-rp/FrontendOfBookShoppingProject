@@ -39,7 +39,6 @@ const AllAuthors = () => {
       <table className={`${styles.table} mt-3`}>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
@@ -50,7 +49,6 @@ const AllAuthors = () => {
         <tbody>
           {authors.map((author) => (
             <tr key={author.id}>
-              <td>{author.id}</td>
               <td>{author.authorName}</td>
               <td>{author.email}</td>
               <td>{author.phone}</td>

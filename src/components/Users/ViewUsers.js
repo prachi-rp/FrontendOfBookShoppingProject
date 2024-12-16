@@ -47,7 +47,6 @@ const handleDelete = async (id) => {
       <table className={`${styles.table} mt-3`}>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Email</th>
             <th>Phone</th>
@@ -58,7 +57,6 @@ const handleDelete = async (id) => {
         <tbody>
           {users.map((user) => (
             <tr key={user.id}>
-              <td>{user.id}</td>
               <td>{user.name}</td>
               <td>{user.email}</td>
               <td>{user.phone}</td>

@@ -14,7 +14,7 @@ const UpdateGenre = () => {
 
   const fetchGenre = async () => {
     try {
-      const response = await axios.get(`/api/Genre/${id}`);
+      const response = await axios.get(`http://localhost:5104/api/Genre/${id}`);
       setGenreName(response.data.genreName);
     } catch (error) {
       console.error("Error fetching genre:", error);

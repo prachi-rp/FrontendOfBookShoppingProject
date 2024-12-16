@@ -19,7 +19,7 @@ const UpdateAuthor = () => {
 
   const fetchAuthor = async () => {
     try {
-      const response = await axios.get(`/api/Author/${id}`);
+      const response = await axios.get(`http://localhost:5104/api/Author/${id}`);
       setAuthor(response.data);
     } catch (error) {
       console.error("Error fetching author:", error);

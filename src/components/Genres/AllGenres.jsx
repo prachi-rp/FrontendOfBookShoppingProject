@@ -38,7 +38,6 @@ const AllGenres = () => {
       <table className={`${styles.table} mt-3`}>
         <thead>
           <tr>
-            <th>ID</th>
             <th>Name</th>
             <th>Actions</th>
           </tr>
@@ -46,7 +45,6 @@ const AllGenres = () => {
         <tbody>
           {genres.map((genre) => (
             <tr key={genre.id}>
-              <td>{genre.id}</td>
               <td>{genre.genreName}</td>
               <td>
                 <Link to={`/update-genre/${genre.id}`} className={`${styles.btn} ${styles.btnInfo}`}>

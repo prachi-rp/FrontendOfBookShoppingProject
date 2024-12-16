@@ -20,10 +20,11 @@ const AddAuthor = () => {
     e.preventDefault();
     try {
       await axios.post("http://localhost:5104/api/author/AddAuthor", author);
-      navigate("/");
+      alert("Author added successfully!");
     } catch (error) {
-      console.error("Error adding author:", error);
+      console.error("Error adding author:", error.response || error.message || error);
     }
+    
   };
 
   return (
